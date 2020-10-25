@@ -7,5 +7,5 @@ function setup() {
 
 function draw() {
     background(200);
-    square(10,10,10,10);
+    square(20,10,10,10);
 }
