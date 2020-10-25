@@ -6,6 +6,6 @@ function setup() {
 }
 
 function draw() {
-    background(200);
+    background(100);
     square(20,10,10,10);
 }
