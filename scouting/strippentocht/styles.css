@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#header {
+    background-color: #3f51b5;
+    height: 14vh;
+    width: 100vw;
+    margin: 0;
+}
+
+button {
+    margin: 10px;
+}
+
+h1 {
+    display: inline;
+}
+
+#menu {
+    height: 86vh;
+    width: 10vw;
+    background-color: #DDDDDD;
+    float: left;
+
+    display: none;
+}
+#content {
+    height: 86vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+#preview {
+    width: 50vh;
+    height: 70vh;
+    border: black solid 1px;
+    margin: 8vh 20px;
+    float: left;
+    position: relative;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#hoverContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.hoverRegister {
+    width: 10%;
+    height: 5%;
+    position: absolute;
+}
+
+.line {
+    stroke:black;
+    stroke-width:2;
+}
