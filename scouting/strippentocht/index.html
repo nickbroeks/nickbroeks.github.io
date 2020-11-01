@@ -5,22 +5,21 @@
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="saveSvgAsPng.js"></script>
     <title>Scouting</title>
   </head>
   <body >
     <div id="header">
       <button onclick="open_menu()">test</button>
       <h1>Strippentocht</h1>
+      <button onclick="save()">save</button>
     </div>
     <div id="menu">
       <a href="./strippentocht/index.html">strippentocht</a>
     </div>
     <div id="content">
       <div id="preview">
-        <svg id="canvas" height="100%" width="100%" onload="on_load()">
-          <line x1="50%" y1="5%" x2="50%" y2="95%" style="stroke:black;stroke-width:2"/>
-          <circle cx="50%" cy="95%" r="8" stroke="black" stroke-width="3" fill="black"/>
-          <!-- <line id="line 1 l 1" class="line 1 l" x1="50%" y1="90%" x2="40%" y2="90%"/> -->
+        <svg id="canvas" height="100%" width="100%" onload="on_load()" xmlns="http://www.w3.org/2000/svg">
         </svg>
         <div id="hoverContainer">
           <div index="1 l" class="hoverRegister" onclick="addLine(this)" onmouseout="stopHighlight(this)" onmouseover="highlight(this)" style="top:87.5%; right:50%;"></div>

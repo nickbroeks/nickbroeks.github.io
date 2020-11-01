@@ -34,10 +34,10 @@ h1 {
 }
 
 #preview {
-    width: 50vh;
-    height: 70vh;
+    width: 56vh;
+    height: 80vh;
     border: black solid 1px;
-    margin: 8vh 20px;
+    margin: 3vh 20px;
     float: left;
     position: relative;
 }
@@ -59,9 +59,4 @@ h1 {
     width: 10%;
     height: 5%;
     position: absolute;
-}
-
-.line {
-    stroke:black;
-    stroke-width:2;
 }
