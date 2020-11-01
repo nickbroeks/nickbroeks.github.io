@@ -25,16 +25,29 @@ function stopHighlight(node) {
 function addLine(node) {
     let indices = node.getAttribute("index").split(" ");
     let i = parseInt(indices[0]);
-    let list = lines[i];
-    if (indices[1] === "r") {
-        list[1]++;
-        if (list[1] === 4) {list[1] = 0}
-    } else {
-        list[0]++;
-        if (list[0] === 4) {list[0] = 0}
+    if (i < 17){
+        let list;
+        if (i < lines.length) {
+            list = lines[i];
+        } else {
+            list = [0,0];
+        }
+        
+        if (indices[1] === "r") {
+            list[1]++;
+            if (list[1] === 4) {list[1] = 0}
+        } else {
+            list[0]++;
+            if (list[0] === 4) {list[0] = 0}
+        }
+        lines[i] = list;
+
+        while (lines.length>1 & lines[lines.length-1][0] === 0 & lines[lines.length-1][1] === 0) {
+            lines.pop();
+        }
+        draw();
     }
-    lines[i] = list;
-    draw();
+    
 }
 
 function draw() {
@@ -219,6 +232,26 @@ function draw() {
         document.getElementById("hoverContainer").appendChild(node);
         
     }
+    if (lines.length < 17) {
+        var node = document.createElement("div");
+        node.setAttribute("index", lines.length + " l");
+        node.setAttribute("class", "hoverRegister");
+        node.setAttribute("onclick", "addLine(this)");
+        node.setAttribute("onmouseout", "stopHighlight(this)");
+        node.setAttribute("onmouseover", "highlight(this)");
+        node.setAttribute("style", "top:" + (87.5 - lines.length*5) + "%; right:50%;");
+        document.getElementById("hoverContainer").appendChild(node);
+
+        node = document.createElement("div");
+        node.setAttribute("index", lines.length + " r");
+        node.setAttribute("class", "hoverRegister");
+        node.setAttribute("onclick", "addLine(this)");
+        node.setAttribute("onmouseout", "stopHighlight(this)");
+        node.setAttribute("onmouseover", "highlight(this)");
+        node.setAttribute("style", "top:" + (87.5 - lines.length*5) + "%; left:50%;");
+        document.getElementById("hoverContainer").appendChild(node);
+    }
+        
 }
 
 
