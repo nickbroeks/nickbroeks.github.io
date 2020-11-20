@@ -5,6 +5,7 @@
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="classes.js"></script>
     <script type="text/javascript" src="saveSvgAsPng.js"></script>
     <title>Scouting</title>
   </head>
@@ -15,14 +16,19 @@
       <button onclick="save()">save</button>
     </div>
     <div id="menu">
-      <a href="../index.html">index</a>
-      <p>strippentocht</p>
-      <a href="../kruispuntentocht/index.html">kruispuntentocht</a>
+      <li><a href="../index.html">index</a></li>
+      <li><a href="../strippentocht/index.html">strippentocht</a></li>
+      <li>kruispuntentocht</li>
+      
     </div>
     <div id="content">
       <div id="preview">
-        <svg id="canvas" height="100%" width="100%" onload="on_load()" xmlns="http://www.w3.org/2000/svg"></svg>
+        <svg id="canvas" height="100%" width="100%" onload="on_load()" xmlns="http://www.w3.org/2000/svg"><rect x=0 y=0 width=100% height=100% fill="white"/></svg>
         <div id="hoverContainer"></div>
+      </div>
+
+      <div id="crossingViewer" onmouseover="hoverEditor()" onmouseleave="stopHoverEditor()">
+        <svg id="crossingEditor"></svg>
       </div>
       
     </div>

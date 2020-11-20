@@ -303,35 +303,3 @@ function draw() {
     }
         
 }
-
-// function change_elements() {
-//     document.getElementsByClassName("line")[0].attributes.x2.nodeValue = "30%"
-// }
-
-// function add_elements() {
-//     var node = document.createElementNS("http://www.w3.org/2000/svg", 'line');
-    
-//     node.setAttribute("class", "line");
-//     node.setAttribute("x1", "20%");
-//     node.setAttribute("x2", "20%");
-//     node.setAttribute("y1", "20%");
-//     node.setAttribute("y2", "80%");
-//     document.getElementById("canvas").appendChild(node);
-//     count++;
-// }
-
-// function incr() {
-//     value = parseInt(document.getElementById("indexlr").innerText);
-//     if (value < count) {
-//         document.getElementById("indexlr").innerText = value + 1;
-//     }
-    
-// }
-
-// function decr() {
-//     value = parseInt(document.getElementById("indexlr").innerText);
-//     if (value > 1) {
-//         document.getElementById("indexlr").innerText = value - 1;
-//     }
-    
-// }

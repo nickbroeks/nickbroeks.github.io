@@ -1,0 +1,197 @@
+body {
+    background-color: #F5C31F;
+    margin: 0;
+    
+}
+
+body * {
+    -webkit-transition: all 0.25s;
+} /* can add this if wanted*/
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12;
+}
+
+    h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.big {
+    width: 100%;
+    position: relative;
+}
+
+.whyText {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#whyContent {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0 60px 0;
+    width: 80%;
+    max-width: 1250px;
+    
+}
+#why {
+    background-color: white;
+    display: block;
+    top:0px;
+    
+}
+
+#headerContent {
+    padding: 50px 0px;
+    position: fixed;
+}
+
+#headerButton {
+    font-size: 30;
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    border: 3px solid #13182C;
+    color: #13182C;
+    background-color: #F5C31F;
+}
+
+#headerButton:hover {
+    cursor: pointer;
+}
+
+#headerButton:focus {
+    border: 3px solid #13182C;
+    outline: none;
+}
+
+#headerLogo {
+    width: 80%;
+    display: block;
+    margin: auto auto;
+}
+#header {
+    height: calc(16vw + 200px);
+    background-color: #F5C31F;
+}
+
+#candidates {
+    height:900px;
+    background-color:#13182C;
+}
+
+#candidates h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 55px;
+}
+
+#candidatesContent {
+    width: 100%;
+    position: absolute;
+}
+
+.candidate {
+    display: inline-block;
+    width: calc(100% / 3);
+}
+
+.candidatePic {
+    width: 100%;
+}
+
+.candidateInfo {
+    position: static;
+    width:50%;
+    height: 70%;
+    background-color: white;
+    z-index: 3;
+    margin: 7.5% auto;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.candidateInfo img {
+    width:60%;
+    margin: 3% 3%;
+    float: left;
+}
+
+.candidateInfoText {
+    width:30%;
+    float: left;
+    margin: 5% 2%;
+}
+
+#closeClick {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    transition: background-color 1s ease;
+}
+
+#socialTab {
+    position: fixed;
+    z-index: 5;
+    bottom: 15px;
+    left: 15px;
+    background-color: #F5C31F;
+    width: 4%;
+    border-radius: 999px;
+    /* border: 2px solid #13182C; */
+}
+
+/*For tablets*/
+@media only screen and (min-width: 600px) {
+
+    
+    #headerLogo {
+        width: 80%;
+    }
+    .candidate {
+        width: calc(100% / 5);
+    }
+}
+
+/*For desktops*/
+@media only screen and (min-width: 768px) {
+
+    #header {
+        height: calc(12vw + 200px);
+    }
+    #headerLogo {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .candidate {
+        width: calc(100% / 6);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .candidate {
+        width: calc(100% / 8);
+    }
+}
+
+/*
+    dark blue #13182C
+    yellow #F5C31F
+    brown #585123 red #772F1A
+*/

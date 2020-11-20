@@ -3,6 +3,8 @@ body {
     overflow: hidden;
 }
 
+p {margin: 0;}
+
 #header {
     background-color: #3f51b5;
     height: 14vh;
