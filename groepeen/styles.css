@@ -1,8 +1,12 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #F5C31F;
     margin: 0;
     overflow-x: hidden;
-    
+    position: relative;
 }
 
 body * {
@@ -17,7 +21,7 @@ button {
     font-size: 12;
 }
 
-    h1 {
+h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
@@ -42,7 +46,7 @@ p {
 #whyContent {
     display: block;
     padding: 20px 0 60px 0;
-    width: 100%;
+    width: 300%;
     position: relative;
     left:0%;
     transition: left 0.8s ease;
@@ -52,13 +56,14 @@ p {
     background-color: white;
     display: block;
     top:0px;
-    width: 300%;
+    width: 100%;
     
 }
 
 #headerContent {
     padding: 50px 0px;
     position: fixed;
+    width: 100vw;
 }
 
 #headerButton {

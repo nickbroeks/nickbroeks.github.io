@@ -23,7 +23,7 @@ function sectionTimer() {
 function nextSection() {
     clearTimeout(timer);
     section = (section + 1) % 3;
-    document.getElementById("whyContent").style.left = "calc(-100% / 3 * " + section + ")";
+    document.getElementById("whyContent").style.left = "-" + section + "00%";
     sectionTimer();
 }
 
