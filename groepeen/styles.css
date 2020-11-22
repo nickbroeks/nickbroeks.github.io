@@ -1,11 +1,14 @@
 body {
     background-color: #F5C31F;
     margin: 0;
+    /* overflow-x: hidden; */
     
 }
 
 body * {
-    -webkit-transition: all 0.25s;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25 ease;
+    
 } /* can add this if wanted*/
 
 button {
@@ -38,16 +41,18 @@ p {
 
 #whyContent {
     display: block;
-    margin: 0 auto;
     padding: 20px 0 60px 0;
-    width: 80%;
-    max-width: 1250px;
+    width: 100%;
+    position: relative;
+    left:0%;
+    transition: left 0.8s ease;
     
 }
 #why {
     background-color: white;
     display: block;
     top:0px;
+    width: 300%;
     
 }
 
@@ -144,17 +149,6 @@ p {
     transition: background-color 1s ease;
 }
 
-#socialTab {
-    position: fixed;
-    z-index: 5;
-    bottom: 15px;
-    left: 15px;
-    background-color: #F5C31F;
-    width: 4%;
-    border-radius: 999px;
-    /* border: 2px solid #13182C; */
-}
-
 /*For tablets*/
 @media only screen and (min-width: 600px) {
 
@@ -171,7 +165,7 @@ p {
 @media only screen and (min-width: 768px) {
 
     #header {
-        height: calc(12vw + 200px);
+        height: calc(12vw + 230px);
     }
     #headerLogo {
         width: 60%;

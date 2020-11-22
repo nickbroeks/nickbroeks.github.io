@@ -10,7 +10,7 @@
 	<script src="sketch.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body onload="sectionTimer()">
 	<div hidden id="closeClick">
 		<div hidden id="candInfo1" class="candidateInfo">
 			<img src="img/cands/5.png">
@@ -256,30 +256,41 @@
 	</div>
     <header class="big" id="header">
         <div id="headerContent"><img id="headerLogo" src="img/logoTxt3.png"><br><button id="headerButton">VOTE NOW!</button>
+			<div class="big" style="height:1px; background-color:  #13182C;"></div>
+			<div class="big" style="height:40px; background-color:  #F5C31F;"></div>
 		</div>
 	</header>
+	
     <div class="big" id="why">
 		<div id="whyContent">
 			<div class="row">
-				<div class="whyText col-md-4 col-xs-12">
-					<h1>What is Groep-één?</h1>
-					<p>
-						The University Council is the representative advisory board of the University, towards the Board of Executives. The council consists of 9 seats for students and 9 for staff. For more than 20 years now, Groep-één|ESR is a fraction of student-representatives in the University Council and an important link between the Executive Board and the students.
-					</p>
+				<div class="whySection col-md-4">
+					<div class="col-md-3"></div>
+					<div class="whyText col-md-6 col-xs-12">
+						<h1>What is Groep-één?</h1>
+						<p>
+							The University Council is the representative advisory board of the University, towards the Board of Executives. The council consists of 9 seats for students and 9 for staff. For more than 20 years now, Groep-één|ESR is a fraction of student-representatives in the University Council and an important link between the Executive Board and the students.
+						</p>
+					</div>
 				</div>
-				<div class="whyText col-md-4 col-xs-12">
-					<h1>University council</h1>
-					<p>
-						Policies and plans that are developed by the TU/e can have enormous consequences for both current and prospective students. Therefore it is of great importance that these developments are looked at from a student's point of view, and to monitor the policy carried out by the Executive Board.
-						<br><br>Because of this, Groep-één|ESR holds regular meetings on university matters with parties such as policymakers, other students and our national branch: ISO. In the meetings with the Board of Executives, the University Council has the right to approve and/or reject certain decisions, or fulfill an advisory role.
-					</p>
+				<div class="whySection col-md-4">
+					<div class="col-md-3"></div>
+					<div class="whyText col-md-6 col-xs-12">
+						<h1>University council</h1>
+						<p>
+							Policies and plans that are developed by the TU/e can have enormous consequences for both current and prospective students. Therefore it is of great importance that these developments are looked at from a student's point of view, and to monitor the policy carried out by the Executive Board.
+							<br><br>Because of this, Groep-één|ESR holds regular meetings on university matters with parties such as policymakers, other students and our national branch: ISO. In the meetings with the Board of Executives, the University Council has the right to approve and/or reject certain decisions, or fulfill an advisory role.
+						</p>
+					</div>
 				</div>
-	
-				<div class="whyText col-md-4 col-xs-12">
-					<h1>Vision</h1>
-					<p>
-						Groep-één|ESR envisions the preconditions of a good university to be guaranteeing quality education, offering possibilities for students to expand your education with extra-curricular activities and supporting TU/e-wide facilities. We believe that the TU/e can build upon the things Groep-één|ESR stands for.
-					</p>
+				<div class="whySection col-md-4">
+					<div class="col-md-3"></div>
+					<div class="whyText col-md-6 col-xs-12">
+						<h1>Vision</h1>
+						<p>
+							Groep-één|ESR envisions the preconditions of a good university to be guaranteeing quality education, offering possibilities for students to expand your education with extra-curricular activities and supporting TU/e-wide facilities. We believe that the TU/e can build upon the things Groep-één|ESR stands for.
+						</p>
+					</div>
 				</div>
 			</div>
 			
@@ -352,8 +363,12 @@
 			</div>
 		</div>
 	</div>
-	<div id="socialTab" onload="calcHeight()" onmouseover="showSocials()" onmouseout="closeSocials()"></div>
+	
 
+	<!-- TODO -->
+	<div hidden style="position: fixed; left: 0; top:45%; height:10%; width:3%; background-color: rgb(0,0,0);" onmouseover="openContent()"></div>
+	<div hidden id="content" style="position: fixed; top:0; background-color: white; height: 100%; left: 0;" onmouseout="closeContent()"></div>
+	<!-- TODO -->
 	<!--
 		Add dates for when to vote 1/12 and 2/12
 

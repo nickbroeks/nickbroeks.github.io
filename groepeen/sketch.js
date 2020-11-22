@@ -1,21 +1,37 @@
 var openID = -1;
+var section = 0;
+var timer;
 
-function closeInfo(e) {
-    if (openID != -1) {
-        
-        document.getElementById("closeClick").style.backgroundColor = "rgba(0,0,0,0)";
-        document.getElementById("candInfo" + openID).style.opacity = 0;
-        setTimeout( () => {
-            document.getElementById("candInfo" + openID).hidden = true;
-            document.getElementById("closeClick").hidden = true;
-            document.getElementById("closeClick").setAttribute("onClick", "");
-        }, 1000)
-    }
-    e.stopPropagation();
+
+
+function openContent() {
+    document.getElementById("content").style.width="150px";
+
+}
+
+function closeContent() {
+    document.getElementById("content").style.width="0";
     
 }
 
+function sectionTimer() {
+    timer = setTimeout(() => {
+        nextSection();
+    }, 10000);
+}
+
+function nextSection() {
+    clearTimeout(timer);
+    section = (section + 1) % 3;
+    document.getElementById("whyContent").style.left = "calc(-100% / 3 * " + section + ")";
+    sectionTimer();
+}
+
 function openInfo(node) {
+
+    for(let i = 0; i <document.getElementsByClassName("candidatePic").length; i++) {
+        document.getElementsByClassName("candidatePic")[i].setAttribute("onClick", "");
+    }
     openID = node.getAttribute("candID");
     document.getElementById("candInfo" + openID).hidden = false;
     document.getElementById("closeClick").hidden = false;
@@ -30,15 +46,18 @@ function openInfo(node) {
     }, 1000)
 }
 
-function showSocials() {
-    document.getElementById("socialTab").style.width="10%";
-}
-
-function closeSocials() {
-    document.getElementById("socialTab").style.width="5%";
-    
-}
-
-function calcHeight() {
-    document.getElementById("social")
+function closeInfo(e) {
+    if (openID != -1) {
+        for(let i = 0; i <document.getElementsByClassName("candidatePic").length; i++) {
+            document.getElementsByClassName("candidatePic")[i].setAttribute("onClick", "openInfo(this)");
+        }
+        document.getElementById("closeClick").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById("candInfo" + openID).style.opacity = 0;
+        document.getElementById("closeClick").setAttribute("onClick", "");
+        setTimeout( () => {
+            document.getElementById("candInfo" + openID).hidden = true;
+            document.getElementById("closeClick").hidden = true;
+            
+        }, 1000)
+    }
 }
