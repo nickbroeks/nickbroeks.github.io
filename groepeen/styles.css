@@ -42,6 +42,7 @@ p {
     display: block;
     width: 80%;
     margin: 0 auto;
+    z-index: 2;
 }
 
 #whyContent {
@@ -51,11 +52,13 @@ p {
     position: relative;
     left:0%;
     transition: left 0.8s ease;
+    z-index: 2;
     
 }
 .whySection {
     width: calc(100% / 3);
     float: left;
+    z-index: 2;
 }
 #why {
     background-color: white;
@@ -81,6 +84,7 @@ p {
     border: 3px solid #13182C;
     color: #13182C;
     background-color: #F5C31F;
+    z-index: 1;
 }
 
 #headerButton:hover {
@@ -96,10 +100,12 @@ p {
     width: 80%;
     display: block;
     margin: auto auto;
+    z-index: 1;
 }
 #header {
     height: calc(16vw + 200px);
     background-color: #F5C31F;
+    z-index: 1;
 }
 
 #candidates {
@@ -114,7 +120,6 @@ p {
     padding-bottom: 10px;
     text-align: center;
     color: white;
-    font-size: 35px;
 }
 
 #candidatesContent {
@@ -188,14 +193,115 @@ p {
     top:0px;
     width: 100%;
     z-index: 2;
+    padding-top: 20px;
     
+}
+
+#quiz {
+    background-color:#13182C;
+    z-index: 3;
+    padding-bottom: 20px;
+}
+
+#quiz h1, #quiz h2 {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+#quizButton {
+    font-size: 40;
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    color:#13182C;
+    border: none;
+    background-color: #F5C31F;
+}
+
+#quizButton:hover {
+    cursor: pointer;
+}
+
+#quizButton:focus {
+    outline: none;
+}
+
+.goalsText {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#goalsContent {
+    display: inline-block;
+    padding: 20px 0 60px 0;
+    width: 700%;
+    position: relative;
+    left:0%;
+    transition: left 0.8s ease;
+    
+}
+.goalsSection {
+    width: calc(100% / 7);
+    float: left;
+}
+#goals {
+    background-color: white;
+    display: block;
+    top:0px;
+    width: 100%;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+#footer {
+    background-color: #F5C31F;
+    z-index: 1;
+}
+
+#footerContent {
+    padding: 50px 0px 0px 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+#footerButton {
+    font-size: 30;
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    border: 3px solid #13182C;
+    color: #13182C;
+    background-color: #F5C31F;
+    z-index: 2;
+}
+
+#footerButton:hover {
+    cursor: pointer;
+}
+
+#footerButton:focus {
+    border: 3px solid #13182C;
+    outline: none;
+}
+
+#footerLogo {
+    width: 80%;
+    display: block;
+    margin: auto auto;
+    z-index: 2;
 }
 
 /*For tablets*/
 @media only screen and (min-width: 600px) {
 
     
-    
+    #footerLogo {
+        width: 80%;
+    }
     #headerLogo {
         width: 80%;
     }
@@ -211,6 +317,10 @@ p {
         height: calc(12vw + 230px);
     }
     #headerLogo {
+        width: 60%;
+    }
+
+    #footerLogo {
         width: 60%;
     }
 
@@ -243,6 +353,12 @@ p {
         width: 50%;
     }
     .achievementsText {
+        width: 50%;
+    }
+    .large {
+        width: 70%;
+    }
+    .goalsText {
         width: 50%;
     }
 }

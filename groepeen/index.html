@@ -10,7 +10,7 @@
 	<script src="sketch.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="sectionWhyTimer(); sectionAchiTimer()">
+<body onload="sectionWhyTimer(); sectionAchiTimer(); sectionGoalTimer()">
 	<div hidden id="closeClick">
 		<div hidden id="candInfo1" class="candidateInfo">
 			<img src="img/cands/5.png">
@@ -378,8 +378,8 @@
 				</div>
 			</div>
 			<div class="achievementsSection">
-				<div class="achievementsText">
-					<h1>Personal Development</h1>
+				<div class="achievementsText large">
+					<h2>Personal Development</h2>
 					<p>
 						This year, we all had to cope with the COVID-19 crisis and we noticed in some cases a board year caused more time, stress or work. Giving them more stress around fulfilling the requirements for a board grant would have been unfair and undesired. Therefore we ensured a relaxation of these requirement to help them and keep them motivated for their board year.
 					<br><br>Next to that, we also pushed for abolishing the entrance requirements for a board grant. After a second legal case this year, the university changed its policy. Before, you had to have your Propaedeutic exam and you should have had obtained 75% of your nominal study pace. These rules are not in place anymore.
@@ -389,7 +389,7 @@
 			</div>
 			<div class="achievementsSection">
 				<div class="achievementsText">
-					<h1>Quality of Education</h1>
+					<h2>Quality of Education</h2>
 					<p>
 						Due to corona, the engagement of students was under attack in the fast developing change of education. Groep-één has worked very hard to keep the student engagement as close to what it normally is. Critical but constructive feedback on proposals helped our education remain high in quality.	
 					</p>
@@ -397,7 +397,7 @@
 			</div>
 			<div class="achievementsSection">
 				<div class="achievementsText">
-					<h1>Community</h1>
+					<h2>Community</h2>
 					<p>
 						Groep-één has tried to raise as much attention as possible for this community building. From our small contribution at the TU/e Radio, towards a TU/e Summer University and towards participation in the design of the onboarding of new students as well as the student mentors for master students who were new at this university. We stressed the importance of community life by speaking up and acting on it!
 					</p>
@@ -405,7 +405,7 @@
 			</div>
 			<div class="achievementsSection">
 				<div class="achievementsText">
-					<h1>Facilities</h1>
+					<h2>Facilities</h2>
 					<p>
 						We have pushed for extra financial support for students, associations and student teams. Examples like the career expo that was cancelled during the first day, study trips that got cancelled, Student teams that had a hard time finding new members, international students that had no financial income anymore and no way of getting any DUO loans, or students that were experiencing expensive delay in their program because of the crisis. We have pushed for attention on these cases and a proper plan and in the meantime, a lot of compensations have been drawn up!
 					</p>
@@ -413,7 +413,80 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="big" id="quiz">
+		<h1>Quiz</h1>
+		<h2>Don't know who to vote for?</h2>
+		<button id="quizButton">Take the quiz!</button>
+	</div>
+	<div class="big" id="goals">
+		<h1>Goals</h1>
+		<div id="goalsContent">
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Inclusivity</h2>
+					<p>
+						Next year, we also want to improve on a better admission policy for internationalization. All students should be our priority and we believe the university should think of a proper policy to have a fair admission process.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Student Well-being</h2>
+					<p>
+						Next year, we also want to tackle the undiscovered well-being issues at our student community. We are working with the university on a proposal to have an employee dedicated to structural wellbeing issues. The pressure on students and the need for personal attention is high and we want students to excel in this university in a safe and healthy way.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Personal Development</h2>
+					<p>
+						In the upcoming year, we want more money to be available for board members and student team members, as currently there is not enough money to give everyone the compensation that was meant for them.
+						<br><br>Next year, we want to get more recognition and support for extra-curricular activitiesin general. There are plenty of things you could do next to your courses, but we encourage good guidance along these activities. This can be done e.g. via personal and/or digital coaching.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Quality of Education</h2>
+					<p>
+						As our university is growing, we need to focus on how to maintain, or restore the personal aspect in your courses. But also during your graduation phase of the bachelor and master. There should be time for you to excel, and that needs good coaching from the moment you step in this university, until the moment you graduate.
+						<br><br>Next year, Groep-één will again be working hard on the best allocation of the Dutch ‘basic grant’ (basisbeurs) for our students. It is ‘our’ money, so it should go to good quality of education for our students.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Sustainability</h2>
+					<p>
+						Groep-één is in close contact with parties that work on sustainability on our campus. By close cooperation, we want to get a university wide mindset on the importance of sustainability.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Community</h2>
+					<p>
+						For the upcoming year, we want to continue working on community life, and in particular on the accessibility of our campus and the community. There should be sufficient facilities for all associations and teams to contribute to this community building and we will stand up for that.
+					</p>
+				</div>
+			</div>
+			<div class="goalsSection">
+				<div class="goalsText">
+					<h2>Facilities</h2>
+					<p>
+						Groep-één wants to also work on the availability of facilities outside of corona. For the quality of our education, it is important to have access to the software we need to study. For materials the same should hold. It is undesired to have students pay a lot of money for the top shelf software they need, or to have them using alternative software that doesn’t provide the needed skill and knowledge on the software you will use later on.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="big" id="footer">
+        <div id="footerContent"><img id="footerLogo" src="img/logoTxt3.png"><br><button id="footerButton">VOTE NOW!</button>
+			<div class="big" style="height:1px; background-color:  #13182C;"></div>
+			<div class="big" style="height:5vh; background-color:  #F5C31F;"></div>
+		</div>
+	</div>
 
 	<!-- TODO -->
 	<div hidden style="position: fixed; left: 0; top:45%; height:10%; width:3%; background-color: rgb(0,0,0);" onmouseover="openContent()"></div>

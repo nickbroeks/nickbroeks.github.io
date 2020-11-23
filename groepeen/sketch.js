@@ -1,8 +1,10 @@
 var openID = -1;
 var whySection = 0;
 var achiSection = 0;
+var goalSection = 0;
 var whyTimer;
 var achiTimer;
+var goalTimer;
 
 
 
@@ -75,4 +77,17 @@ function nextAchiSection() {
     achiSection = (achiSection + 1) % 6;
     document.getElementById("achievementsContent").style.left = -achiSection + "00%";
     sectionAchiTimer();
+}
+
+function sectionGoalTimer() {
+    goalTimer = setTimeout(() => {
+        nextGoalSection();
+    }, 10000);
+}
+
+function nextGoalSection() {
+    clearTimeout(goalTimer);
+    goalSection = (goalSection + 1) % 7;
+    document.getElementById("goalsContent").style.left = -goalSection + "00%";
+    sectionGoalTimer();
 }
