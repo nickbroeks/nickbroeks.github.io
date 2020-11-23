@@ -1,6 +1,8 @@
 var openID = -1;
-var section = 0;
-var timer;
+var whySection = 0;
+var achiSection = 0;
+var whyTimer;
+var achiTimer;
 
 
 
@@ -14,17 +16,17 @@ function closeContent() {
     
 }
 
-function sectionTimer() {
-    timer = setTimeout(() => {
-        nextSection();
+function sectionWhyTimer() {
+    whyTimer = setTimeout(() => {
+        nextWhySection();
     }, 10000);
 }
 
-function nextSection() {
-    clearTimeout(timer);
-    section = (section + 1) % 3;
-    document.getElementById("whyContent").style.left = "-" + section + "00%";
-    sectionTimer();
+function nextWhySection() {
+    clearTimeout(whyTimer);
+    whySection = (whySection + 1) % 3;
+    document.getElementById("whyContent").style.left = -whySection + "00%";
+    sectionWhyTimer();
 }
 
 function openInfo(node) {
@@ -60,4 +62,17 @@ function closeInfo(e) {
             
         }, 1000)
     }
+}
+
+function sectionAchiTimer() {
+    achiTimer = setTimeout(() => {
+        nextAchiSection();
+    }, 10000);
+}
+
+function nextAchiSection() {
+    clearTimeout(achiTimer);
+    achiSection = (achiSection + 1) % 6;
+    document.getElementById("achievementsContent").style.left = -achiSection + "00%";
+    sectionAchiTimer();
 }
