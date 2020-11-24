@@ -74,26 +74,27 @@ p {
     position: fixed;
     width: 100%;
     z-index: 1;
+    text-align: center;
 }
 
 #headerButton {
-    font-size: 30;
-    display: block;
+    display: inline-block;
     padding: 15px;
     margin: 20px auto;
     border: 3px solid #13182C;
-    color: #13182C;
     background-color: #F5C31F;
     z-index: 1;
 }
 
-#headerButton:hover {
-    cursor: pointer;
+#headerButtonText {
+    color: #13182C;
+    font-size: 30;
+    margin: 0;
 }
 
-#headerButton:focus {
-    border: 3px solid #13182C;
-    outline: none;
+#headerButton:hover {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #headerLogo {
@@ -103,7 +104,7 @@ p {
     z-index: 1;
 }
 #header {
-    height: calc(16vw + 200px);
+    height: calc(80vw / 1713 * 358 + 10vh + 140px);
     background-color: #F5C31F;
     z-index: 1;
 }
@@ -125,6 +126,7 @@ p {
 #candidatesContent {
     width: 100%;
     position: relative;
+    box-shadow: 0px 0px 20px -5px white;
 }
 
 .candidate {
@@ -219,6 +221,7 @@ p {
     color:#13182C;
     border: none;
     background-color: #F5C31F;
+    box-shadow: 0px 0px 20px -5px white;
 }
 
 #quizButton:hover {
@@ -266,26 +269,27 @@ p {
     padding: 50px 0px 0px 0px;
     width: 100%;
     z-index: 2;
+    text-align: center;
 }
 
 #footerButton {
-    font-size: 30;
-    display: block;
+    display: inline-block;
     padding: 15px;
     margin: 20px auto;
     border: 3px solid #13182C;
-    color: #13182C;
     background-color: #F5C31F;
-    z-index: 2;
+    z-index: 1;
+}
+
+#footerButtonText {
+    color: #13182C;
+    font-size: 30;
+    margin: 0;
 }
 
 #footerButton:hover {
     cursor: pointer;
-}
-
-#footerButton:focus {
-    border: 3px solid #13182C;
-    outline: none;
+    text-decoration: none;
 }
 
 #footerLogo {
@@ -295,6 +299,38 @@ p {
     z-index: 2;
 }
 
+#contentTab {
+    position: fixed;
+    left: 0px;
+    top:45%;
+    height:10%;
+    border-radius: 0px 15px 15px 0px;
+    width:1.5%;
+    background-color: rgb(221,221, 221); 
+    z-index: 8;
+}
+
+#content {
+    position: fixed;
+    top:0;
+    background-color:rgb(221,221, 221);
+    height: 100%;
+    left: 0;
+    z-index: 9; 
+    width: 0;
+    z-index: 9;
+}
+
+#contentList li {
+    cursor: pointer;
+    padding: 3px;
+}
+
+#contentList li h2{
+    font-size: 24px;
+    text-align: left;
+    text-emphasis: bold;
+}
 /*For tablets*/
 @media only screen and (min-width: 600px) {
 
@@ -314,11 +350,13 @@ p {
 @media only screen and (min-width: 768px) {
 
     #header {
-        height: calc(12vw + 230px);
+        height: calc(60vw / 1713 * 358 + 10vh + 140px);
     }
     #headerLogo {
         width: 60%;
     }
+
+    
 
     #footerLogo {
         width: 60%;

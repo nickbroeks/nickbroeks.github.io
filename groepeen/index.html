@@ -255,9 +255,7 @@
 
 	</div>
     <header class="big" id="header">
-        <div id="headerContent"><img id="headerLogo" src="img/logoTxt3.png"><br><button id="headerButton">VOTE NOW!</button>
-			<div class="big" style="height:1px; background-color:  #13182C;"></div>
-			<div class="big" style="height:40px; background-color:  #F5C31F;"></div>
+        <div id="headerContent"><img id="headerLogo" src="img/logoTxt3.png"><br><a href="https://verkiezingen.tue.nl/" id="headerButton"><p id="headerButtonText">VOTE NOW!</p></a>
 		</div>
 	</header>
 	
@@ -482,15 +480,25 @@
 		</div>
 	</div>
 	<div class="big" id="footer">
-        <div id="footerContent"><img id="footerLogo" src="img/logoTxt3.png"><br><button id="footerButton">VOTE NOW!</button>
-			<div class="big" style="height:1px; background-color:  #13182C;"></div>
-			<div class="big" style="height:5vh; background-color:  #F5C31F;"></div>
-		</div>
+        <div id="footerContent"><img id="footerLogo" src="img/logoTxt3.png"><br><a href="https://verkiezingen.tue.nl/" id="headerButton"><p id="headerButtonText">VOTE NOW!</p></a></div>
 	</div>
 
 	<!-- TODO -->
-	<div hidden style="position: fixed; left: 0; top:45%; height:10%; width:3%; background-color: rgb(0,0,0);" onmouseover="openContent()"></div>
-	<div hidden id="content" style="position: fixed; top:0; background-color: white; height: 100%; left: 0;" onmouseout="closeContent()"></div>
+	
+	<div id="content" onmouseleave="closeContent(event)">
+		<ul id="contentList" style="position: fixed; left: -200px; top:20px">
+			<li lID="why" onClick="scrolll(this)"><h2>Why</h2></li>
+			<li lID="candidates" onClick="scrolll(this)"><h2>Candidates</h2></li>
+			<li lID="achievements" onClick="scrolll(this)"><h2>Achievements</h2></li>
+			<li lID="quiz" onClick="scrolll(this)"><h2>Quiz</h2></li>
+			<li lID="goals" onClick="scrolll(this)"><h2>Goals</h2></li>
+		</ul>
+	</div>
+	<div id="contentTab" onmouseover="openContent()">
+		<div style="width: 1px; height: 70%; background-color: black; position: relative; left: 12px; top: 15%;float: left;"></div>
+		<div style="width: 1px; height: 70%; background-color: black; position: relative; left: 6px; top: 15%; float: left;"></div>
+		<div style="width: 1px; height: 70%; background-color: black; position: relative; left: 15px; top: 15%; float: left;"></div>
+	</div>
 	<!-- TODO -->
 	<!--
 		Add dates for when to vote 1/12 and 2/12

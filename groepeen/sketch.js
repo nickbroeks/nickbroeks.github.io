@@ -9,13 +9,20 @@ var goalTimer;
 
 
 function openContent() {
-    document.getElementById("content").style.width="150px";
+    document.getElementById("content").style.width="240px";
+    document.getElementById("contentTab").style.left="240px";
+    document.getElementById("contentList").style.left="0px";
+    document.getElementById("contentTab").setAttribute("onmouseover","");
 
 }
 
 function closeContent() {
-    document.getElementById("content").style.width="0";
-    
+    document.getElementById("content").style.width="0px";
+    document.getElementById("contentTab").style.left="0px";
+    document.getElementById("contentList").style.left="-240px";
+    setTimeout(() => {
+        document.getElementById("contentTab").setAttribute("onmouseover","openContent()");
+    },300)
 }
 
 function sectionWhyTimer() {
@@ -90,4 +97,9 @@ function nextGoalSection() {
     goalSection = (goalSection + 1) % 7;
     document.getElementById("goalsContent").style.left = -goalSection + "00%";
     sectionGoalTimer();
+}
+
+function scrolll(node) {
+    var el = document.getElementById(node.getAttribute("lID"));
+    el.scrollIntoView({behavior: "smooth"});
 }
