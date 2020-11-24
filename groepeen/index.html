@@ -297,6 +297,7 @@
 	</header>
 	
     <div class="big" id="why">
+		<h1 style="font-weight: bolder; font-size: 45px;">Groep-één</h1>
 		<div id="whyContent">
 			<div class="whySection">
 				<div class="whyText">
@@ -328,7 +329,7 @@
 
 	</div>
 	<div class="big" id="candidates">
-		<h1>Our candidates</h1>
+		<h1 style="font-weight: bolder; font-size: 45px;">Our candidates</h1>
 		<div id="candidatesContent">
 			<div class="candidate">
 				<img candID=1 onClick="openInfo(this)" class="candidatePic" src="img/cands/1-min.jpg">
@@ -394,7 +395,7 @@
 		</div>
 	</div>
 	<div class="big" id="achievements">
-		<h1>Achievements</h1>
+		<h1 style="font-weight: bolder; font-size: 45px;">Achievements</h1>
 		<div id="achievementsContent">
 			<div class="achievementsSection">
 				<div class="achievementsText">
@@ -449,12 +450,12 @@
 		</div>
 	</div>
 	<div class="big" id="quiz">
-		<h1>Quiz</h1>
+		<h1 style="font-weight: bolder; font-size: 45px;">Quiz</h1>
 		<h2>Don't know who to vote for?</h2>
-		<button id="quizButton">Take the quiz!</button>
+		<a href="https://www.groep-een.com/voting-guide-elections-2020/" id="quizButton"><p id="quizButtonText">VOTE NOW!</p></a>
 	</div>
 	<div class="big" id="goals">
-		<h1>Goals</h1>
+		<h1 style="font-weight: bolder; font-size: 45px;">Goals</h1>
 		<div id="goalsContent">
 			<div class="goalsSection">
 				<div class="goalsText">
@@ -519,12 +520,11 @@
 	<div class="big" id="footer">
         <div id="footerContent"><img id="footerLogo" src="img/logoTxt3.png"><br><a href="https://verkiezingen.tue.nl/" id="headerButton"><p id="headerButtonText">VOTE NOW!</p></a></div>
 	</div>
-
-	<!-- TODO -->
 	
 	<div id="content" onmouseleave="closeContent(event)">
-		<ul id="contentList" style="position: fixed; left: -200px; top:20px">
-			<li lID="why" onClick="scrolll(this)"><h2>Why</h2></li>
+		<h1 id="contentText"style="margin-left: 20px;position: fixed; left: -200px; top:20px font-weight: bolder; font-size: 45px;">Menu</h1>
+		<ul id="contentList" style="position: fixed; left: -200px; top:60px">
+			<li lID="why" onClick="scrolll(this)"><h2>Groep-één</h2></li>
 			<li lID="candidates" onClick="scrolll(this)"><h2>Candidates</h2></li>
 			<li lID="achievements" onClick="scrolll(this)"><h2>Achievements</h2></li>
 			<li lID="quiz" onClick="scrolll(this)"><h2>Quiz</h2></li>
@@ -536,7 +536,6 @@
 		<div style="width: 1px; height: 70%; background-color: black; position: relative; left: 6px; top: 15%; float: left;"></div>
 		<div style="width: 1px; height: 70%; background-color: black; position: relative; left: 15px; top: 15%; float: left;"></div>
 	</div>
-	<!-- TODO -->
 	<!--
 		Add dates for when to vote 1/12 and 2/12
 

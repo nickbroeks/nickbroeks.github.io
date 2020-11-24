@@ -12,6 +12,7 @@ function openContent() {
     document.getElementById("content").style.width="240px";
     document.getElementById("contentTab").style.left="240px";
     document.getElementById("contentList").style.left="0px";
+    document.getElementById("contentText").style.left="0px";
     document.getElementById("contentTab").setAttribute("onmouseover","");
 
 }
@@ -20,6 +21,7 @@ function closeContent() {
     document.getElementById("content").style.width="0px";
     document.getElementById("contentTab").style.left="0px";
     document.getElementById("contentList").style.left="-240px";
+    document.getElementById("contentText").style.left="-240px";
     setTimeout(() => {
         document.getElementById("contentTab").setAttribute("onmouseover","openContent()");
     },300)

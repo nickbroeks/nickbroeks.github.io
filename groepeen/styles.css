@@ -24,8 +24,13 @@ button {
 h1, h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    
 }
 
+h1 {
+    font-weight: bolder;
+    font-size: 45px;
+}
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13;
@@ -203,6 +208,7 @@ p {
     background-color:#13182C;
     z-index: 3;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 #quiz h1, #quiz h2 {
@@ -214,22 +220,24 @@ p {
 }
 
 #quizButton {
-    font-size: 40;
-    display: block;
+    display: inline-block;
     padding: 15px;
     margin: 20px auto;
-    color:#13182C;
-    border: none;
     background-color: #F5C31F;
+    z-index: 1;
+    border: none;
     box-shadow: 0px 0px 20px -5px white;
+}
+
+#quizButtonText {
+    color: #13182C;
+    font-size: 30;
+    margin: 0;
 }
 
 #quizButton:hover {
     cursor: pointer;
-}
-
-#quizButton:focus {
-    outline: none;
+    text-decoration: none;
 }
 
 .goalsText {
