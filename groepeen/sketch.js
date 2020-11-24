@@ -44,7 +44,8 @@ function openInfo(node) {
         document.getElementsByClassName("candidatePic")[i].setAttribute("onClick", "");
     }
     openID = node.getAttribute("candID");
-    document.getElementById("candInfo" + openID).hidden = false;
+    //document.getElementById("candInfo" + openID).hidden = false;
+    document.getElementById("candInfo"+ openID).style.display = "block";
     document.getElementById("closeClick").hidden = false;
     
     setTimeout( () => {
@@ -66,7 +67,7 @@ function closeInfo(e) {
         document.getElementById("candInfo" + openID).style.opacity = 0;
         document.getElementById("closeClick").setAttribute("onClick", "");
         setTimeout( () => {
-            document.getElementById("candInfo" + openID).hidden = true;
+            //document.getElementById("candInfo" + openID).hidden = true;
             document.getElementById("closeClick").hidden = true;
             
         }, 1000)

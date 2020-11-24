@@ -139,6 +139,7 @@ p {
 }
 
 .candidateInfo {
+    display: none;
     position: static;
     width:80%;
     max-height: 85%;
@@ -373,16 +374,6 @@ p {
         width: calc(100% / 6);
     }
 
-    .candidateInfo img {
-        width: 50%;
-        margin: 3% 3%;
-        float: left;
-    }
-    
-    .candidateInfoText {
-        width: 34%;
-    }
-
     .candidateInfo {
         width: 60%;
     }
@@ -404,6 +395,16 @@ p {
 @media only screen and (min-width: 1200px) {
     .candidate {
         width: calc(100% / 10);
+    }
+
+    .candidateInfo img {
+        width: 50%;
+        margin: 3% 3%;
+        float: left;
+    }
+    
+    .candidateInfoText {
+        width: 34%;
     }
 }
 
