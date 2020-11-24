@@ -35,7 +35,7 @@ h1 img, h2 img {
     height:40px;
     margin: 0px 10px;
 }
-p {
+p, a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13;
     line-height: 1.8;
@@ -79,7 +79,7 @@ p {
 }
 
 #headerContent {
-    padding: 50px 0px;
+    padding: 50px 0px 20px 0px;
     width: 100%;
     z-index: 1;
     text-align: center;
@@ -112,7 +112,6 @@ p {
     z-index: 1;
 }
 #header {
-    height: calc(80vw / 1713 * 358 + 10vh + 140px);
     background-color: #F5C31F;
     z-index: 1;
 }
@@ -360,9 +359,6 @@ p {
 /*For desktops*/
 @media only screen and (min-width: 768px) {
 
-    #header {
-        height: calc(60vw / 1713 * 358 + 10vh + 140px);
-    }
     #headerLogo {
         width: 60%;
     }
