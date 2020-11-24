@@ -233,7 +233,7 @@ p, a {
 
 #quizButtonText {
     color: #13182C;
-    font-size: 30;
+    font-size: 20;
     margin: 0;
 }
 
@@ -398,6 +398,10 @@ p, a {
     }
     .goalsText {
         width: 50%;
+    }
+
+    #quizButtonText {
+        font-size: 30;
     }
 }
 
