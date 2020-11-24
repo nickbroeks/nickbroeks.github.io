@@ -316,7 +316,7 @@ p {
     top:45%;
     height:10%;
     border-radius: 0px 15px 15px 0px;
-    width:1.5%;
+    width:30px;
     background-color: rgb(221,221, 221); 
     z-index: 8;
 }

@@ -13,7 +13,10 @@ function openContent() {
     document.getElementById("contentTab").style.left="240px";
     document.getElementById("contentList").style.left="0px";
     document.getElementById("contentText").style.left="0px";
-    document.getElementById("contentTab").setAttribute("onmouseover","");
+    setTimeout(() => {
+        document.getElementById("contentTab").setAttribute("onmouseover","closeContent()");
+    },300);
+    
 
 }
 
@@ -104,4 +107,6 @@ function nextGoalSection() {
 function scrolll(node) {
     var el = document.getElementById(node.getAttribute("lID"));
     el.scrollIntoView({behavior: "smooth"});
+
+    closeContent();
 }
