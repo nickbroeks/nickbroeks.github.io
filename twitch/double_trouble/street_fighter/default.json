@@ -1,10 +1,18 @@
-[
-    {"name": "Fadi 1 point","url":"F1.png", "voteFor": "Fadi", "voteAmount": 1},
-    {"name": "Fadi 3 points","url":"F3.png", "voteFor": "Fadi", "voteAmount": 3},
-    {"name": "Fadi 5 points","url":"F5.png", "voteFor": "Fadi", "voteAmount": 5},
-    {"name": "Fadi 10 points","url":"F10.png", "voteFor": "Fadi", "voteAmount": 10},
-    {"name": "Shinta 1 point","url":"S1.png", "voteFor": "Shinta", "voteAmount": 1},
-    {"name": "Shinta 3 points","url":"S3.png", "voteFor": "Shinta", "voteAmount": 3},
-    {"name": "Shinta 5 points","url":"S5.png", "voteFor": "Shinta", "voteAmount": 5},
-    {"name": "Shinta 10 points","url":"S10.png", "voteFor": "Shinta", "voteAmount": 10}
-]
+{
+    "theme":
+    {
+        "name":"Test",
+        "link":"test"
+    },
+    "value":
+    [
+        {"name": "Fadi 1 point","url":"F1.png", "voteFor": "Fadi", "voteAmount": 1},
+        {"name": "Fadi 3 points","url":"F3.png", "voteFor": "Fadi", "voteAmount": 3},
+        {"name": "Fadi 5 points","url":"F5.png", "voteFor": "Fadi", "voteAmount": 5},
+        {"name": "Fadi 10 points","url":"F10.png", "voteFor": "Fadi", "voteAmount": 10},
+        {"name": "Shinta 1 point","url":"S1.png", "voteFor": "Shinta", "voteAmount": 1},
+        {"name": "Shinta 3 points","url":"S3.png", "voteFor": "Shinta", "voteAmount": 3},
+        {"name": "Shinta 5 points","url":"S5.png", "voteFor": "Shinta", "voteAmount": 5},
+        {"name": "Shinta 10 points","url":"S10.png", "voteFor": "Shinta", "voteAmount": 10}
+    ]
+}
