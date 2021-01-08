@@ -23,5 +23,5 @@
             {"name": "Shinta 6 points","url":"test_S6.png", "voteFor": "Shinta", "voteAmount": 6, "bits": 600},
             {"name": "Fadi 8 points","url":"test_F8.png", "voteFor": "Fadi", "voteAmount": 8, "bits": 800},
             {"name": "Shinta 8 points","url":"test_S8.png", "voteFor": "Shinta", "voteAmount": 8, "bits": 800}
-        ],
+        ]
 }
