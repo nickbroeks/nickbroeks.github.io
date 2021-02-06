@@ -6,11 +6,20 @@
 	<script src="index.js"></script>
 	<meta name="author" content="Nick Broeks">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the HTML page compatible with phone -->
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<button onclick="press()">Drinken kut!</button>
-	<p id="1" style="font-size: 50px;"></p>
-	<br>
-	<p id="2" style="font-size: 50px;"></p>
+	<div id="config-tab">
+		<input id="config-tab-input-name" type="text">
+		<button onclick="submitName()">Submit name</button>
+		<div id="config-tab-names"></div>
+		<button onclick="startGame()">Start game</button>
+	</div>
+	<div id="game-tab">
+		<button onclick="press()">Drinken kut!</button>
+		<p id="1" style="font-size: 50px;"></p>
+		<br>
+		<p id="2" style="font-size: 50px;"></p>
+	</div>
 </body>
 </html>
