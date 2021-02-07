@@ -15,6 +15,23 @@
     },
 
     {
+        "name": "Batman",
+        "values":
+        [
+            {"name": "Fadi 1 point","url":"batman_F1.png", "voteFor": "Fadi", "voteAmount": 1, "bits": 100},
+            {"name": "Shinta 1 point","url":"batman_S1.png", "voteFor": "Shinta", "voteAmount": 1, "bits": 100},
+            {"name": "Fadi 3 points","url":"batman_F3.png", "voteFor": "Fadi", "voteAmount": 3, "bits": 300},
+            {"name": "Shinta 3 points","url":"batman_S3.png", "voteFor": "Shinta", "voteAmount": 3, "bits": 300},
+            {"name": "Fadi 5 points","url":"batman_F5.png", "voteFor": "Fadi", "voteAmount": 5, "bits": 500},
+            {"name": "Shinta 5 points","url":"batman_S5.png", "voteFor": "Shinta", "voteAmount": 5, "bits": 500},
+            {"name": "Fadi 10 points","url":"batman_F10.png", "voteFor": "Fadi", "voteAmount": 10, "bits": 1000},
+            {"name": "Shinta 10 points","url":"batman_S10.png", "voteFor": "Shinta", "voteAmount": 10, "bits": 1000}
+            {"name": "Fadi 20 points","url":"batman_F20.png", "voteFor": "Fadi", "voteAmount": 20, "bits": 2000},
+            {"name": "Shinta 20 points","url":"batman_S20.png", "voteFor": "Shinta", "voteAmount": 20, "bits": 2000}
+        ]
+    },
+
+    {
         "name":"Test pictures",
         "values":
             [
