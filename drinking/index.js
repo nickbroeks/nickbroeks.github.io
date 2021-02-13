@@ -13,12 +13,23 @@ function press() {
 }
 
 function submitName() {
-    let newName = document.querySelector("#config-tab-input-name").value;
-    names.push(newName);
-    let obj = document.createElement("span");
-    obj.innerText = newName;
-    document.querySelector("#config-tab-names").appendChild(obj);
-    document.querySelector("#config-tab-names").appendChild(document.createElement("br"));
+    if (document.querySelector("#config-tab-input-name").value != "") {
+        let newName = document.querySelector("#config-tab-input-name").value;
+        names.push(newName);
+        let obj = document.createElement("span");
+        obj.innerText = newName;
+        document.querySelector("#config-tab-names").appendChild(obj);
+        document.querySelector("#config-tab-names").appendChild(document.createElement("br"));
+        document.querySelector("#config-tab-input-name").value = "";
+    }
+}
+
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  if (e.code == "Enter") {
+      submitName();
+  }
 }
 
 function startGame() {
