@@ -1,3 +1,7 @@
 #game-tab {
     visibility: hidden;
 }
+
+.Red {
+    background-color: red;
+}
