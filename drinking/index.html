@@ -3,6 +3,8 @@
 <head> <!-- Settings and references, not visible -->
 	<meta charset="UTF-8"> <!-- Define character set, just include -->
 	<title>Drinking game of hell</title> <!-- Name of tab -->
+	<script src=//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js>
+	</script>
 	<script src="index.js"></script>
 	<meta name="author" content="Nick Broeks">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the HTML page compatible with phone -->
@@ -10,6 +12,7 @@
 </head>
 <body>
 	<div id="config-tab">
+		<input id="config-tab-seed" type="text">
 		<input id="config-tab-input-name" type="text">
 		<button onclick="submitName()">Submit name</button>
 		<div id="config-tab-names"></div>

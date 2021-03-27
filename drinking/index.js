@@ -11,7 +11,7 @@ function press() {
         number = 1 + Math.floor(Math.random() * 4);
     }
     document.getElementById("2").innerText = number
-    setTimeout(press, 120000);
+    setTimeout(press, 20000);
     document.body.classList.add("Red");
     setTimeout(()=> {document.body.classList.remove("Red")}, 3000)
     setTimeout(()=> {document.body.classList.add("Red")}, 4000)
@@ -51,5 +51,11 @@ function logKey(e) {
 function startGame() {
     document.querySelector('#config-tab').style.visibility = "hidden";
     document.querySelector('#game-tab').style.visibility = "visible";
+    let seed = document.querySelector('#config-tab-seed').value;
+    if (seed == "") {
+        Math.seedrandom();
+    } else {
+        Math.seedrandom(seed);
+    }
     press();
 }
