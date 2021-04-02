@@ -3,11 +3,12 @@ let names = [];
 function press() {
     let pers = names[Math.floor(Math.random() * names.length)];
     let number;
-    if (pers == "Inge") {
-        document.getElementById("1").innerText = pers
+    document.getElementById("1").innerText = pers
+    if (pers.toLowerCase() == "inge") {
         number = 3 + Math.floor(Math.random() * 3);
+    } else if(pers.toLowerCase() == "nick") {
+    number = 3 + Math.floor(Math.random() * 30);
     } else {
-        document.getElementById("1").innerText = pers
         number = 1 + Math.floor(Math.random() * 4);
     }
     document.getElementById("2").innerText = number
