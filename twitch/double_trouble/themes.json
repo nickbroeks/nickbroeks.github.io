@@ -11,8 +11,8 @@
             {"name": "Shinta 5 points","url":"street_fighter_S5.png", "voteFor": "Shinta", "voteAmount": 5, "bits": 500},
             {"name": "Fadi 10 points","url":"street_fighter_F10.png", "voteFor": "Fadi", "voteAmount": 10, "bits": 1000},
             {"name": "Shinta 10 points","url":"street_fighter_S10.png", "voteFor": "Shinta", "voteAmount": 10, "bits": 1000},
-            {"name": "Fadi 20 points","url":"street_fighter_F20.png", "voteFor": "Fadi", "voteAmount": 20, "bits": 2000}
-            {"name": "Shinta 20 points","url":"street_fighter_S20.png", "voteFor": "Shinta", "voteAmount": 20, "bits": 2000},
+            {"name": "Fadi 20 points","url":"street_fighter_F20.png", "voteFor": "Fadi", "voteAmount": 20, "bits": 2000},
+            {"name": "Shinta 20 points","url":"street_fighter_S20.png", "voteFor": "Shinta", "voteAmount": 20, "bits": 2000}
         ]
     },
 
