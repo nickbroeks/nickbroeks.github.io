@@ -25,12 +25,11 @@ body {
 #nonMenu {
     right: 0;
     width: 100vw;
-    height: 800px;
     min-height: 100vh;
     position: relative;
     background-image: url("./Background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #Header {
@@ -133,12 +132,13 @@ body {
 
 #Content {
     width: 100%;
+    padding-bottom: 120px;
 }
 
 
 #Footer {
     position: absolute;
-    padding: 35px 10% 0 10%;
+    padding: 35px 5% 0 5%;
     width: 100%;
     bottom: 0;
     background-image: url("FooterBackground.png");
@@ -172,42 +172,46 @@ body {
 /* -----------------------------------------------------------------------------------------------------*/
 /* Styles per page */
 
-
+#Home {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
 #HomeText {
-    padding-left: 20%;
+    padding: 30px 0 0 200px;
     font-family: Tribe;
     text-align: right;
-    padding-top: 30px;
+    width: 50%;
+    float: left;
 }
 
 #HomeText1 {
-    font-size: 120px;
+    font-size: 80px;
 }
 
 #HomeText2 {
-    font-size: 45px;
+    font-size: 35px;
+}
+#HomeImage {
+    width: 40%;
+    float: left;
 }
 
-#HomeImage {
-    height: 50%;
+#HomeSep1, #HomeSep2 {
+    float: left;
+    width: 70%;
+    height: 40px;
+    margin: 10px 15% 0 15%;
+    background-image: url("./HomeSep.png");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: center;
 }
 
 #AboutText {
     padding-left: 20%;
     text-align: right;
     padding-top: 30px;
-}
-
-#HomeText1 {
-    font-size: 120px;
-}
-
-#HomeText2 {
-    font-size: 45px;
-}
-
-#HomeImage {
-    height: 50%;
 }
 /* Styles per page */
 /* -----------------------------------------------------------------------------------------------------*/
@@ -228,19 +232,6 @@ body {
     display: table;
 }
 
-.col-1 {width: calc(100% / 12)}
-.col-2 {width: calc(100% / 6)}
-.col-3 {width: calc(100% / 4)}
-.col-4 {width: calc(100% / 3)}
-.col-5 {width: calc(500% / 12)}
-.col-6 {width: calc(100% / 2)}
-.col-7 {width: calc(700% / 12)}
-.col-8 {width: calc(200% / 3)}
-.col-9 {width: calc(300% / 4)}
-.col-10 {width: calc(500% / 6)}
-.col-11 {width: calc(1100% / 12)}
-.col-12 {width: 100%}
-
 [class*="col-"] {
     float: left;
 }
@@ -259,7 +250,32 @@ body {
     #HeaderRightHalf{
         width: 100px;
     }
+    .col-xs-1 {width: calc(100% / 12)}
+    .col-xs-2 {width: calc(100% / 6)}
+    .col-xs-3 {width: calc(100% / 4)}
+    .col-xs-4 {width: calc(100% / 3)}
+    .col-xs-5 {width: calc(500% / 12)}
+    .col-xs-6 {width: calc(100% / 2)}
+    .col-xs-7 {width: calc(700% / 12)}
+    .col-xs-8 {width: calc(200% / 3)}
+    .col-xs-9 {width: calc(300% / 4)}
+    .col-xs-10 {width: calc(500% / 6)}
+    .col-xs-11 {width: calc(1100% / 12)}
+    .col-xs-12 {width: 100%}
 
+    #HomeText {
+        width: 100%;
+        padding: 0 10%;
+        text-align: center;
+    }
+
+    #HomeText1 {
+        font-size: 40px;
+    }
+
+    #HomeText2 {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 991px){
@@ -270,7 +286,36 @@ body {
     #HeaderRightHalf{
         width: 360px;
     }
+    .col-s-1 {width: calc(100% / 12)}
+    .col-s-2 {width: calc(100% / 6)}
+    .col-s-3 {width: calc(100% / 4)}
+    .col-s-4 {width: calc(100% / 3)}
+    .col-s-5 {width: calc(500% / 12)}
+    .col-s-6 {width: calc(100% / 2)}
+    .col-s-7 {width: calc(700% / 12)}
+    .col-s-8 {width: calc(200% / 3)}
+    .col-s-9 {width: calc(300% / 4)}
+    .col-s-10 {width: calc(500% / 6)}
+    .col-s-11 {width: calc(1100% / 12)}
+    .col-s-12 {width: 100%}
 
+    #Home {
+        overflow: visible;
+    }
+
+    #HomeText {
+        width: 100%;
+        padding: 0 20%;
+        text-align: center;
+    }
+
+    #HomeText1 {
+        font-size: 50px;
+    }
+
+    #HomeText2 {
+        font-size: 30px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -282,12 +327,58 @@ body {
     #HeaderRightHalf{
         width: 360px;
     }
+
+    .col-1 {width: calc(100% / 12)}
+    .col-2 {width: calc(100% / 6)}
+    .col-3 {width: calc(100% / 4)}
+    .col-4 {width: calc(100% / 3)}
+    .col-5 {width: calc(500% / 12)}
+    .col-6 {width: calc(100% / 2)}
+    .col-7 {width: calc(700% / 12)}
+    .col-8 {width: calc(200% / 3)}
+    .col-9 {width: calc(300% / 4)}
+    .col-10 {width: calc(500% / 6)}
+    .col-11 {width: calc(1100% / 12)}
+    .col-12 {width: 100%}
+
+    #HomeText {
+        padding: 30px 0 0 100px;
+        padding-top: 30px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     
     .HideBig {
         display: none !important;
+    }
+
+    .col-l-1 {width: calc(100% / 12)}
+    .col-l-2 {width: calc(100% / 6)}
+    .col-l-3 {width: calc(100% / 4)}
+    .col-l-4 {width: calc(100% / 3)}
+    .col-l-5 {width: calc(500% / 12)}
+    .col-l-6 {width: calc(100% / 2)}
+    .col-l-7 {width: calc(700% / 12)}
+    .col-l-8 {width: calc(200% / 3)}
+    .col-l-9 {width: calc(300% / 4)}
+    .col-l-10 {width: calc(500% / 6)}
+    .col-l-11 {width: calc(1100% / 12)}
+    .col-l-12 {width: 100%}
+}
+
+@media only screen and (min-width: 1700px) {
+    #HomeText {
+        padding: 30px 0 0 300px;
+        font-size: 20px;
+    }
+
+    #HomeText1 {
+        font-size: 120px;
+    }
+
+    #HomeText2 {
+        font-size: 45px;
     }
 }
 
