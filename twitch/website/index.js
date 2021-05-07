@@ -11,7 +11,7 @@ function openMenu() {
 
     document.querySelector("#menu").style.display = "block"
     setTimeout(()=>{
-        document.querySelector("body").style.right = "200px"
+        document.querySelector("body").style.right = "160px"
     },0)
 }
 
@@ -24,3 +24,5 @@ function closeMenu() {
 
     document.querySelector("body").style.right = "0"
 }
+
+//On resize, close menu

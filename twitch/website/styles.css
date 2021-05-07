@@ -33,14 +33,14 @@ body {
 }
 
 #Header {
-    height: 200px;
+    height: 140px;
     position: relative;
 }
 
 #HeaderLogo {
     display: inline-block;
     position: relative;
-    height: 80%;
+    height: 90%;
     top: 10%;
     left: 1%;
 }
@@ -49,7 +49,7 @@ body {
     display: block;
     float: right;
     width: calc(100% - 310px);
-    height: 50%;
+    height: 85px;
     position: relative;
     top: 10%;
     text-align: right;
@@ -66,7 +66,6 @@ body {
     margin-right: 100px;
     font-family: Tribe;
     font-size: 50px;
-    height: 90%;
 }
 
 .HeaderSubPage:first-of-type {
@@ -76,11 +75,13 @@ body {
 .Selected::after {
     content: "";
     display: block;
-    position: relative;
+    position: absolute;
     background-image: url("./SkribbleWhite.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    top:2px;
+    top:100%;
+    transform: translateX(-50%);
+    left: 50%;
     width: 100px;
     height: 23px;
     color: red;
@@ -112,10 +113,11 @@ body {
     position: absolute;
     z-index: 1000000;
     top: 0px;
-    right: -200px;
-    width: 200px;
+    right: -160px;
+    width: 160px;
     height: 100%;
     background-color: black;
+    padding-top: 10px;
 }
 
 .MenuSubPage {
@@ -126,8 +128,14 @@ body {
     text-decoration: none;
     text-align: center;
     font-family: Tribe;
-    font-size: 50px;
+    font-size: 30px;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.MenuSubPage.Selected::after {
+    width: 60px;
+    height: 15px;
 }
 
 #Content {
@@ -208,10 +216,38 @@ body {
     background-position: center;
 }
 
-#AboutText {
-    padding-left: 20%;
-    text-align: right;
-    padding-top: 30px;
+#AboutText1 {
+    text-align: center;
+    font-family: tribe;
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+
+#AboutText2 {
+    padding-bottom: 10px;
+    padding: 0 18% 10px 18%;
+    font-size: 20px;
+}
+
+#AboutText3 {
+    padding-bottom: 10px;
+    padding: 0 18% 10px 18%;
+    font-size: 20px;
+}
+
+#AboutText1::before, #AboutText1::after {
+    content: "";
+    display: inline-block;
+    background-image: url("./AboutTextImage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+#AboutText1::after {
+    transform:scaleX(-1);
 }
 /* Styles per page */
 /* -----------------------------------------------------------------------------------------------------*/
@@ -316,6 +352,11 @@ body {
     #HomeText2 {
         font-size: 30px;
     }
+
+    #AboutText2, #AboutText3 {
+        padding: 0 5% 10px 5%;
+        font-size: 17px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -345,6 +386,10 @@ body {
         padding: 30px 0 0 100px;
         padding-top: 30px;
     }
+    #AboutText2, #AboutText3 {
+        padding: 0 8% 10px 8%;
+    }
+    
 }
 
 @media only screen and (min-width: 1200px) {
