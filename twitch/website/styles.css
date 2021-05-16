@@ -249,6 +249,74 @@ body {
 #AboutText1::after {
     transform:scaleX(-1);
 }
+
+#Festival {
+    display: flow-root;
+}
+div#Festival > div:first-child {
+    padding: 0 100px ;
+}
+
+#FestivalLogo {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#FestivalText {
+    padding: 0 10%;
+}
+#FestivalImage {
+    width: 100%;
+    padding-right: 200px;
+}
+
+#ArtistsText1 {
+    text-align: center;
+    font-family: tribe;
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+
+#ArtistsText1::before, #ArtistsText1::after {
+    content: "";
+    display: inline-block;
+    background-image: url("./AboutTextImage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+#ArtistsText1::after {
+    transform:scaleX(-1);
+}
+
+#ArtistsContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: calc(100vh - 140px - 120px - 115px - 8px);
+    display: flex;
+}
+
+.ArtistsPerTwo {
+    position: relative;
+    height: 100%;
+    width: calc(calc(100vh - 140px - 120px - 115px - 8px) / 2);
+    float: left;
+}
+
+.Artist {
+    height: 50%;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.Artist img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
 /* Styles per page */
 /* -----------------------------------------------------------------------------------------------------*/
 /* General styles */
@@ -317,6 +385,10 @@ body {
         font-size: 40px;
     }
 
+    #ArtistsText1 {
+        font-size: 40px;
+    }
+
     #AboutText2, #AboutText3 {
         padding: 0 5% 10px 5%;
         font-size: 17px;
@@ -325,6 +397,24 @@ body {
     #AboutText1::before, #AboutText1::after {
         width: 40px;
         height: 30px;
+    }
+
+    #ArtistsText1::before, #ArtistsText1::after {
+        width: 40px;
+        height: 30px;
+    }
+
+    #FestivalImage {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #ArtistsContainer {
+        height: 60vh;
+    }
+
+    .ArtistsPerTwo {
+        width: 30vh;
     }
 }
 
@@ -379,6 +469,29 @@ body {
         width: 40px;
         height: 30px;
     }
+
+    #ArtistsText1 {
+        font-size: 50px;
+    }
+    #ArtistsText1::before, #ArtistsText1::after {
+        width: 40px;
+        height: 30px;
+    }
+    
+    #FestivalImage {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #ArtistsContainer {
+        height: 60vh;
+    }
+
+    .ArtistsPerTwo {
+        width: 30vh;
+    }
+
+    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -448,7 +561,7 @@ body {
         font-size: 45px;
     }
 
-    #AboutText2 {
+    #AboutText2, #AboutText3 {
         font-size: 30px;
     }
 }
